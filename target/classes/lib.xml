@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library library_name="Central Library">
+    <section section_name="Science">
+        <category category_name="Physics">
+            <book book_title="Quantum Mechanics" author="David Griffiths" price="750"/>
+            <book book_title="A Brief History of Time" author="Stephen Hawking" price="500"/>
+        </category>
+        <category category_name="Biology">
+            <book book_title="The Selfish Gene" author="Richard Dawkins" price="600"/>
+            <book book_title="Biology of Cells" author="Alberts" price="950"/>
+        </category>
+    </section>
+    
+    <section section_name="Literature">
+        <category category_name="Fiction">
+            <book book_title="1984" author="George Orwell" price="300"/>
+            <book book_title="To Kill a Mockingbird" author="Harper Lee" price="350"/>
+        </category>
+        <category category_name="Poetry">
+            <book book_title="Leaves of Grass" author="Walt Whitman" price="250"/>
+            <book book_title="The Sun and Her Flowers" author="Rupi Kaur" price="275"/>
+        </category>
+    </section>
+    
+    <section section_name="Technology">
+        <category category_name="Programming">
+            <book book_title="Clean Code" author="Robert C. Martin" price="800"/>
+            <book book_title="Effective Java" author="Joshua Bloch" price="850"/>
+        </category>
+        <category category_name="AI &amp; ML">
+            <book book_title="Deep Learning" author="Ian Goodfellow" price="1200"/>
+            <book book_title="Pattern Recognition and Machine Learning" author="Christopher Bishop" price="1100"/>
+        </category>
+    </section>
+</library>

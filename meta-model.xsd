@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<meta-meta-model xmlns="http://iiitb.ac.in/mt2024111"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation=
+                          "http://iiitb.ac.in/mt2024111 meta-meta-model.xsd">
+    
+    <Enitity Name="store">
+        <attribute Name="store_name" type="string"/>
+        <relation Name="HasCategory" target="category"/>
+    </Enitity>
+    <Enitity Name="category">
+        <attribute Name="category_name" type="string" />
+        <relation Name="HasSubcategory" target="subcategory" />
+    </Enitity>
+    <Enitity Name="subcategory">
+        <attribute Name="subcategory_name" type="string" />
+        <relation  Name="HasProduct" target="product"/>
+    </Enitity>
+    <Enitity Name="product">
+        <attribute Name="product_name" type="string"/>
+        <attribute Name="price" type="string"/>
+    </Enitity>
+</meta-meta-model>

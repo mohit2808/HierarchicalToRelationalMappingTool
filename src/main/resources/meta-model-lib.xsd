@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta-meta-model xmlns="http://iiitb.ac.in/mt2024111"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://iiitb.ac.in/mt2024111 meta-meta-model.xsd">
+
+    <Enitity Name="library">
+        <attribute Name="library_name" type="string"/>
+        <relation Name="HasSection" target="section"/>
+    </Enitity>
+
+    <Enitity Name="section">
+        <attribute Name="section_name" type="string"/>
+        <relation Name="HasCategory" target="category"/>
+    </Enitity>
+
+    <Enitity Name="category">
+        <attribute Name="category_name" type="string"/>
+        <relation Name="HasBook" target="book"/>
+    </Enitity>
+
+    <Enitity Name="book">
+        <attribute Name="book_title" type="string"/>
+        <attribute Name="author" type="string"/>
+        <attribute Name="price" type="string"/>
+    </Enitity>
+
+</meta-meta-model>

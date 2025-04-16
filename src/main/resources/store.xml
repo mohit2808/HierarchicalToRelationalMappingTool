@@ -1,0 +1,18 @@
+<store store_name = "abc">
+    <category category_name = "gloceries">
+        <subcategory subcategory_name = "dairy-products">
+            <product product_name = "milk" price = "500"/>
+            <product product_name= "curd" price = "200"/>
+        </subcategory>
+        <subcategory subcategory_name = "flour">
+            <product product_name= "maida" price = "100"/>
+            <product product_name = "wheat" price = "100" />
+        </subcategory>
+    </category>
+    <category category_name = "electronics">
+        <subcategory subcategory_name = "computer-parts">
+            <product product_name = "mouse" price = "200" />
+            <product product_name = "key-board" price = "300" />
+        </subcategory>
+    </category>
+</store>

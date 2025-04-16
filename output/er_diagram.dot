@@ -1,0 +1,10 @@
+digraph ERDiagram {
+  node [shape=box, style=filled, fillcolor=lightblue];
+  store;
+  category;
+  subcategory;
+  product;
+  store -> category [label="Foreign Key"];
+  category -> subcategory [label="Foreign Key"];
+  subcategory -> product [label="Foreign Key"];
+}

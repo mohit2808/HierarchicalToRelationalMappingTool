@@ -1,0 +1,126 @@
+<store store_name="SuperMart">
+
+    <category category_name="groceries">
+        <subcategory subcategory_name="dairy-products">
+            <product product_name="milk" price="50"/>
+            <product product_name="curd" price="40"/>
+            <product product_name="cheese" price="150"/>
+            <product product_name="butter" price="120"/>
+            <product product_name="yogurt" price="70"/>
+        </subcategory>
+        <subcategory subcategory_name="flour">
+            <product product_name="wheat" price="45"/>
+            <product product_name="maida" price="40"/>
+            <product product_name="rice-flour" price="60"/>
+            <product product_name="corn-flour" price="55"/>
+            <product product_name="gram-flour" price="65"/>
+        </subcategory>
+        <subcategory subcategory_name="spices">
+            <product product_name="turmeric" price="30"/>
+            <product product_name="chili-powder" price="35"/>
+            <product product_name="coriander" price="28"/>
+            <product product_name="garam-masala" price="75"/>
+            <product product_name="cumin" price="25"/>
+        </subcategory>
+    </category>
+
+    <category category_name="electronics">
+        <subcategory subcategory_name="mobile-accessories">
+            <product product_name="charger" price="300"/>
+            <product product_name="power-bank" price="1000"/>
+            <product product_name="earphones" price="500"/>
+            <product product_name="phone-case" price="200"/>
+            <product product_name="screen-guard" price="100"/>
+        </subcategory>
+        <subcategory subcategory_name="computer-accessories">
+            <product product_name="mouse" price="250"/>
+            <product product_name="keyboard" price="700"/>
+            <product product_name="usb-drive" price="400"/>
+            <product product_name="monitor" price="5000"/>
+            <product product_name="webcam" price="800"/>
+        </subcategory>
+        <subcategory subcategory_name="home-appliances">
+            <product product_name="mixer" price="2500"/>
+            <product product_name="toaster" price="1500"/>
+            <product product_name="iron" price="1200"/>
+            <product product_name="blender" price="1800"/>
+            <product product_name="air-purifier" price="7500"/>
+        </subcategory>
+    </category>
+
+    <category category_name="clothing">
+        <subcategory subcategory_name="men">
+            <product product_name="shirt" price="800"/>
+            <product product_name="jeans" price="1500"/>
+            <product product_name="jacket" price="2000"/>
+            <product product_name="t-shirt" price="600"/>
+            <product product_name="shorts" price="500"/>
+        </subcategory>
+        <subcategory subcategory_name="women">
+            <product product_name="dress" price="1800"/>
+            <product product_name="top" price="900"/>
+            <product product_name="leggings" price="700"/>
+            <product product_name="kurti" price="1100"/>
+            <product product_name="saree" price="2500"/>
+        </subcategory>
+        <subcategory subcategory_name="kids">
+            <product product_name="t-shirt" price="400"/>
+            <product product_name="shorts" price="350"/>
+            <product product_name="frock" price="600"/>
+            <product product_name="cap" price="150"/>
+            <product product_name="shoes" price="700"/>
+        </subcategory>
+    </category>
+
+    <category category_name="books">
+        <subcategory subcategory_name="fiction">
+            <product product_name="novel-a" price="300"/>
+            <product product_name="novel-b" price="350"/>
+            <product product_name="novel-c" price="250"/>
+            <product product_name="novel-d" price="280"/>
+            <product product_name="novel-e" price="320"/>
+        </subcategory>
+        <subcategory subcategory_name="non-fiction">
+            <product product_name="biography-a" price="400"/>
+            <product product_name="self-help-a" price="450"/>
+            <product product_name="history-a" price="380"/>
+            <product product_name="science-a" price="500"/>
+            <product product_name="travel-a" price="420"/>
+        </subcategory>
+    </category>
+
+    <category category_name="furniture">
+        <subcategory subcategory_name="living-room">
+            <product product_name="sofa" price="15000"/>
+            <product product_name="coffee-table" price="3500"/>
+            <product product_name="tv-stand" price="4000"/>
+            <product product_name="recliner" price="8000"/>
+            <product product_name="bookshelf" price="3000"/>
+        </subcategory>
+        <subcategory subcategory_name="bedroom">
+            <product product_name="bed" price="20000"/>
+            <product product_name="wardrobe" price="18000"/>
+            <product product_name="nightstand" price="2500"/>
+            <product product_name="dresser" price="7000"/>
+            <product product_name="mirror" price="2200"/>
+        </subcategory>
+    </category>
+
+    <category category_name="toys">
+        <subcategory subcategory_name="educational">
+            <product product_name="puzzle" price="600"/>
+            <product product_name="abacus" price="500"/>
+            <product product_name="flashcards" price="300"/>
+            <product product_name="shape-sorter" price="450"/>
+            <product product_name="lego-set" price="1200"/>
+        </subcategory>
+        <subcategory subcategory_name="action-figures">
+            <product product_name="superhero-a" price="800"/>
+            <product product_name="superhero-b" price="850"/>
+            <product product_name="robot" price="1500"/>
+            <product product_name="transformer" price="1300"/>
+            <product product_name="ninja-figure" price="700"/>
+        </subcategory>
+    </category>
+
+</store>

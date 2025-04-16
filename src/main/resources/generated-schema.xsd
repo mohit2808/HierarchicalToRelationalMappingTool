@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:complexType name="storeType">
+    <xs:complexContent>
+      <xs:extension base="xs:anyType">
+        <xs:attributeGroup>
+          <xs:attribute name="store_name" type="xs:string"/>
+        </xs:attributeGroup>
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="category" type="categoryType"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="categoryType">
+    <xs:complexContent>
+      <xs:extension base="xs:anyType">
+        <xs:attributeGroup>
+          <xs:attribute name="category_name" type="xs:string"/>
+        </xs:attributeGroup>
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="subcategory" type="subcategoryType"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="subcategoryType">
+    <xs:complexContent>
+      <xs:extension base="xs:anyType">
+        <xs:attributeGroup>
+          <xs:attribute name="subcategory_name" type="xs:string"/>
+        </xs:attributeGroup>
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="product" type="productType"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="productType">
+    <xs:complexContent>
+      <xs:extension base="xs:anyType">
+        <xs:attributeGroup>
+          <xs:attribute name="product_name" type="xs:string"/>
+          <xs:attribute name="price" type="xs:string"/>
+        </xs:attributeGroup>
+        <xs:sequence/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="store" type="storeType"/>
+</xs:schema>

@@ -1,0 +1,34 @@
+Validation successful.
+Executed: CREATE TABLE store (id INT AUTO_INCREMENT PRIMARY KEY, store_name VARCHAR(255));
+Executed: CREATE TABLE category (id INT AUTO_INCREMENT PRIMARY KEY, category_name VARCHAR(255));
+Executed: CREATE TABLE subcategory (id INT AUTO_INCREMENT PRIMARY KEY, subcategory_name VARCHAR(255));
+Executed: CREATE TABLE product (id INT AUTO_INCREMENT PRIMARY KEY, product_name VARCHAR(255), price VARCHAR(255));
+Executed: CREATE TABLE entity_hierarchy (id INT AUTO_INCREMENT PRIMARY KEY, parent_entity VARCHAR(255), child_entity VARCHAR(255), relation_name VARCHAR(255));
+Executed: CREATE TABLE relation_store_HasCategory (id INT AUTO_INCREMENT PRIMARY KEY, store_id INT, category_id INT, FOREIGN KEY (store_id) REFERENCES store(id), FOREIGN KEY (category_id) REFERENCES category(id));
+Executed: CREATE TABLE relation_category_HasSubcategory (id INT AUTO_INCREMENT PRIMARY KEY, category_id INT, subcategory_id INT, FOREIGN KEY (category_id) REFERENCES category(id), FOREIGN KEY (subcategory_id) REFERENCES subcategory(id));
+Executed: CREATE TABLE relation_subcategory_HasProduct (id INT AUTO_INCREMENT PRIMARY KEY, subcategory_id INT, product_id INT, FOREIGN KEY (subcategory_id) REFERENCES subcategory(id), FOREIGN KEY (product_id) REFERENCES product(id));
+Executed: INSERT INTO entity_hierarchy (parent_entity, child_entity, relation_name) VALUES ('store', 'category', 'HasCategory');
+Executed: INSERT INTO entity_hierarchy (parent_entity, child_entity, relation_name) VALUES ('category', 'subcategory', 'HasSubcategory');
+Executed: INSERT INTO entity_hierarchy (parent_entity, child_entity, relation_name) VALUES ('subcategory', 'product', 'HasProduct');
+
+Table: store
+id: 1  store_name: abc  
+
+Table: category
+id: 1  category_name: gloceries  
+id: 2  category_name: electronics  
+
+Table: subcategory
+id: 1  subcategory_name: dairy-products  
+id: 2  subcategory_name: flour  
+id: 3  subcategory_name: computer-parts  
+
+Table: product
+id: 1  product_name: milk  price: 500  
+id: 2  product_name: curd  price: 200  
+id: 3  product_name: maida  price: 100  
+id: 4  product_name: wheat  price: 100  
+id: 5  product_name: mouse  price: 200  
+id: 6  product_name: key-board  price: 300  
+
+Process finished with exit code 0
